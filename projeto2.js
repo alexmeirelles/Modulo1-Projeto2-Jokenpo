@@ -48,7 +48,7 @@ while(trytrue){
     
         if(opcao===resposta){
             console.log();
-            console.log("Empate. Ninguém pontua. "+opcaoe+".");
+            console.log("Leu minha mente. Empate. Ninguém pontua. "+opcaoe+".");
             console.log();
         }else if(opcao==1 && resposta==2){
             console.log();
