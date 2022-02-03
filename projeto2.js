@@ -29,18 +29,21 @@ sleep(500);
 while(trytrue){
     for (let i = 0; i < partidas; i++){
 
-        var opcao=parseInt(+prompt("\nQual é a sua opcao?  1 - Papel 2 - Pedra 3 - Tesoura: "));
+        var opcao=(prompt("Qual é a sua opcao? Digite Papel, Pedra ou Tesoura: "));
         var resposta=Math.floor((Math.random() * 3) + 1);
         var opcaoe = "";
     
-        if(opcao==1){
+        if(opcao.trim().toLowerCase()=="papel"){
             opcaoe+=" Você escolheu papel ";
+            opcao = 1;
         }
-        else if(opcao==2){
+        else if(opcao.trim().toLowerCase()=="pedra"){
             opcaoe+=" Você escolheu pedra ";
+            opcao = 2;
         }
-        else if(opcao==3){
+        else if(opcao.trim().toLowerCase()=="tesoura"){
             opcaoe+=" Você escolheu tesoura ";
+            opcao = 3;
         }
     
         if(opcao===resposta){
